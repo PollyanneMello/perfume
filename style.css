@@ -85,5 +85,45 @@ body{
     flex-direction: row-reverse;
     align-items: baseline;
     margin-top: 10px;
+}
+@media (min-width: 700px) {
    
+    .conteudo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px;
+        background: white;       
+        border-radius: 10px 10px ;
+        width: 700px;
+        height: 500px;
+    }
+    .img{
+        display: block;
+        max-width: 100%;
+        max-height: 500px;
+        border-radius: 10px 0px 0px 10px;
+        background-size: cover;
+    }
+    .descricao{
+        display: grid;
+    }
+    .botao{
+        display: block;
+        background: hsl(158, 36%, 37%);
+        height: 30px;
+        text-align: center;
+        color: white;
+        border-radius: 6px;
+   }
+   .preco-inteiro{
+    margin-top: -20px;
+   }
+   .footer{
+    display: flex;
+    align-content: center;
+    width: 700px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0px 40px;
+   }
 }
